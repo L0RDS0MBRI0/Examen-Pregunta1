@@ -11,7 +11,9 @@ public class Pregunta1 {
         }
 
 
-
+        if (!codigo.matches("[A-Z]{2}[0-9]{3}")) {
+            return "Ingrese un código de pedido válido";
+        }
 
 
         if (correo.length() < 6 || !correo.contains("@")) {
