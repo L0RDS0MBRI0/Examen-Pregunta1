@@ -6,6 +6,9 @@ public class Pregunta1 {
     public static String validarPedido(String codigo, String correo, String cantidadStr, String fechaStr) {
 
 
+        if (codigo.isEmpty() || correo.isEmpty() || cantidadStr.isEmpty() || fechaStr.isEmpty()) {
+            return "Debe ingresar todos los datos requeridos";
+        }
 
 
         if (!codigo.matches("[A-Z]{2}[0-9]{3}")) {
