@@ -16,7 +16,9 @@ public class Pregunta1 {
         }
 
 
-
+        if (correo.length() < 6 || !correo.contains("@")) {
+            return "Ingrese un correo electrónico válido";
+        }
 
 
         int cantidad;
